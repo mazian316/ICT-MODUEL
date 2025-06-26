@@ -1,5 +1,5 @@
-def get_prop_picks(game_type=None):
-    return [
+def get_prop_picks(game_filter=None):
+    data = [
         {"player": "Christian Yelich", "prop_type": "HR", "confidence": 85, "reason": "Crushing fastballs"},
         {"player": "Yordan Alvarez", "prop_type": "HR", "confidence": 88, "reason": "Hot streak continues"},
         {"player": "Bo Bichette", "prop_type": "HR", "confidence": 82, "reason": "Great matchup vs LHP"},
@@ -9,3 +9,8 @@ def get_prop_picks(game_type=None):
         {"player": "Freddie Freeman", "prop_type": "TB", "confidence": 84, "reason": "Strong vs RHP"},
         {"player": "Spencer Strider", "prop_type": "Ks", "confidence": 92, "reason": "Strikeout machine"}
     ]
+    
+    if game_filter:
+        data = [d for d in data if d["prop_type"] == game_filter]
+    
+    return data
