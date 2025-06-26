@@ -10,11 +10,6 @@ st.image(logo, width=200)
 st.markdown("### _MLB Prop Betting Picks - Powered by ICT MODULE_")
 
 # Top 5 Picks
-st.markdown("### 🔥 Top 5 Picks of the Day")
-
-props = get_prop_picks("All Games")
-top_5 = sorted(props, key=lambda x: x['confidence'], reverse=True)[:5]
-
 for prop in top_5:
     st.markdown(
         f"**{prop['player']}** — _{prop['prop_type']}_  \n"
