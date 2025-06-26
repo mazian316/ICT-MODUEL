@@ -1,4 +1,4 @@
-def get_prop_picks(game_type):
+def get_prop_picks(game_type): # <-- default value
     return [
         {'player': 'Shohei Ohtani', 'prop_type': 'Home Run', 'confidence': 95, 'reason': 'Hot streak + favorable matchup'},
         {'player': 'Aaron Judge', 'prop_type': 'Total Bases', 'confidence': 93, 'reason': 'High slugging vs LHP'},
