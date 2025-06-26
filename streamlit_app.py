@@ -3,7 +3,17 @@ from utils.prop_logic import get_prop_picks
 from PIL import Image
 
 st.set_page_config(page_title="ICT MODULE")
+filter_option = st.selectbox("📊 Filter by Prop Type", ["All", "HR", "Ks", "Hits", "TB"])
 
+# Apply filter using the argument your function expects
+if filter_option == "All":
+    filtered_props = get_prop_picks()
+else:
+    filtered_props = get_prop_picks(filter_option)
+
+# Then use filtered_props instead of get_prop_picks()
+top_5 = filtered_props[:5]
+props = filtered_props
 top_5 = get_prop_picks(None)[:5]
 props = get_prop_picks(None)
 
