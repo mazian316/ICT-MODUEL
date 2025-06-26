@@ -7,5 +7,5 @@ def get_prop_picks(game_type=None):
         {"player": "Zac Gallen", "prop_type": "Ks", "confidence": 87, "reason": "High strikeout rate"},
         {"player": "Juan Soto", "prop_type": "Hits", "confidence": 83, "reason": "Multi-hit potential"},
         {"player": "Freddie Freeman", "prop_type": "TB", "confidence": 84, "reason": "Strong vs RHP"},
-        {"player": "Spencer Strider", "prop_type": "Ks", "confidence": 92, "reason": "Strikeout machine"},
+        {"player": "Spencer Strider", "prop_type": "Ks", "confidence": 92, "reason": "Strikeout machine"}
     ]
