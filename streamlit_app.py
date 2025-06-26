@@ -25,10 +25,3 @@ for prop in props:
     st.markdown("———")
 
 
-# All Props Table
-st.markdown("## 📊 All Prop Picks")
-for prop in props:
-    st.markdown(f"**{prop['player']}** — _{prop['prop_type']}_")
-    st.markdown(f"🧠 Confidence: {prop['confidence']}%")
-    st.markdown(f"📌 {prop['reason']}")
-    st.markdown("---")
