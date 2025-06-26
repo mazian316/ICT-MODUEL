@@ -4,8 +4,8 @@ from PIL import Image
 
 st.set_page_config(page_title="ICT MODULE")
 
-top_5 = get_prop_picks(none)[:5]
-props = get_prop_picks(none)
+top_5 = get_prop_picks(None)[:5]
+props = get_prop_picks(None)
 
 # Top 5 Picks
 for prop in top_5:
