@@ -14,8 +14,6 @@ else:
 # Then use filtered_props instead of get_prop_picks()
 top_5 = filtered_props[:5]
 props = filtered_props
-top_5 = get_prop_picks(None)[:5]
-props = get_prop_picks(None)
 
 # Top 5 Picks
 for prop in top_5:
