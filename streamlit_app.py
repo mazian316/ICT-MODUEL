@@ -4,11 +4,6 @@ from PIL import Image
 
 st.set_page_config(page_title="ICT MODULE", layout="wide", page_icon="⚾")
 
-# Load logo
-logo = Image.open("static/logo.png")
-st.image(logo, width=200)
-st.markdown("### _MLB Prop Betting Picks - Powered by ICT MODULE_")
-
 # Top 5 Picks
 for prop in top_5:
     st.markdown(
